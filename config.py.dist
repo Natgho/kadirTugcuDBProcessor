@@ -1,0 +1,11 @@
+# Coded by Sezer Yavuzer Bozkır <admin@sezerbozkir.com>
+# Date: 18.06.2017
+
+class Config:
+    mysql = {
+        'host': 'localhost',
+        'user': 'mysql_user_name',
+        'password': 'your_password',
+        'database': 'kadirTugcu',
+        'charset': 'utf8'
+    }
