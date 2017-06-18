@@ -13,7 +13,7 @@ class BaseModel(Model):
         database = db
 
 
-class Articles(BaseModel):
+class Articles_Dev(BaseModel):
     id = PrimaryKeyField(db_column="id")
     url = TextField(db_column="url")
     publish_date = TextField(db_column="publish_date")
@@ -27,5 +27,5 @@ class Articles(BaseModel):
 
 if __name__ == '__main__':
     # db.create_table(Articles, safe=True)
-    for icerik in Articles.select().limit(10):
+    for icerik in Articles_Dev.select().limit(10):
         print(icerik.category)
